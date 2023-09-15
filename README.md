@@ -7,6 +7,11 @@
 
 
 //task 1: make show and hide card program
+     //hide ho jayega button click krne pr nhi ayega 
+
+
+
+
 
 const button = document.getElementById('showHideButton');
 const container = document.getElementsByClassName('container')[0];
@@ -37,6 +42,21 @@ function showHideCard(){
         container.style.display = 'block'
         button.innerText = 'Hide Card';
         button.style.backgroundColor = 'grey';
+
      }   
 }
 button.addEventListener('click', () => showHideCard())
+
+<h1>hide div by myself</h1> <br> <br/>
+
+const container = document.getElementsByClassName("container")[0];
+const button = document.getElementById("showHideButton")
+const  heading = document.getElementsByClassName("heading1")
+const allPara = document.getElementsByTagName("p")
+const para = document.getElementById("para")
+
+
+button.addEventListener('click', ()=>{
+     container.style.display = 'none'
+    console.log("click the button ")
+});
